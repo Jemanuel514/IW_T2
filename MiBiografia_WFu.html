@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/encabezado.css">
+    <link rel="stylesheet" href="estilos/estiloDesktop.css">
+    <link rel="stylesheet" href="estilos/piedepagina.css">
     <title>Mi Biografía - Winson Fu</title>
 </head>
 <body>
@@ -35,25 +38,31 @@
     
             <article>
                 <h3>Mis cualidades</h3>
-                <dl>
-                    <dt>Analítico</dt>
-                    <dd>Me gusta trabajar con datos, buscar patrones y entender cómo la información puede usarse para resolver problemas.</dd>
-                    
-                    <dt>Curioso</dt>
-                    <dd>Siempre trato de aprender cosas nuevas, especialmente relacionadas con la programación, la tecnología y el análisis de datos.</dd>
-                    
-                    <dt>Persistente</dt>
-                    <dd>Cuando algo no me sale a la primera, sigo intentándolo hasta encontrar la solución, sin rendirme fácilmente.</dd>
-                    
-                    <dt>Responsable</dt>
-                    <dd>Cumplo con mis tareas y compromisos, ya que considero importante la disciplina y la organización en lo que hago.</dd>
-                    
-                    <dt>Colaborador</dt>
-                    <dd>Me gusta trabajar en equipo, compartir ideas y aprender de los demás para lograr mejores resultados.</dd>
-                </dl>
+                <ul>
+                    <li>
+                        Analítico
+                        <p>Me gusta trabajar con datos, buscar patrones y entender cómo la información puede usarse para resolver problemas.</p>
+                    </li>
+                    <li>
+                        Curioso
+                        <p>Siempre trato de aprender cosas nuevas, especialmente relacionadas con la programación, la tecnología y el análisis de datos.</p>
+                    </li>
+                    <li>
+                        Persistente
+                        <p>Cuando algo no me sale a la primera, sigo intentándolo hasta encontrar la solución, sin rendirme fácilmente.</p>
+                    </li>
+                    <li>
+                        Responsable
+                        <p>Cumplo con mis tareas y compromisos, ya que considero importante la disciplina y la organización en lo que hago.</p>
+                    </li>
+                    <li>
+                        Colaborador
+                        <p>Me gusta trabajar en equipo, compartir ideas y aprender de los demás para lograr mejores resultados.</p>
+                    </li>
+                </ul>
             </article>
     
-            <article>
+            <article id="pasatiempos">
                 <h3>Mis Pasatiempos</h3>
                 <ul>
                     <li>
@@ -78,7 +87,7 @@
                 </ul>
             </article>
     
-            <figure>
+            <figure id="mi-video">
                 <h3>Mi Vídeo</h3>
                 <video controls width="400"><source src="videos/los leones.mp4" type="video/mp4"></video>
                 <figcaption>Los Leones</figcaption>
@@ -86,44 +95,51 @@
         </section>
     
         <section>
-            <article>
+            <article id="libros">
                 <h2 id="libros-favoritos">Mis Libros Favoritos</h2>
                 <ol>
                     <li>
                         <h3>Ojitos de ángel - Ramón Fonseca Mora</h3>
-                        <img src="imagenes/winson/libros/Ojitos de ángel.jpeg" width="200">
-                        <p>narra la historia de Don Julio Vargas, un hombre rico y prepotente que, tras un accidente, despierta en un hospital público donde conoce a Mercedes (Mechi), una niña con leucemia.</p>
+                        <div class="contenido">
+                            <p>Narra la historia de Don Julio Vargas, un hombre rico y prepotente que, tras un accidente, despierta en un hospital público donde conoce a Mercedes (Mechi), una niña con leucemia.</p>
+                            <img src="imagenes/winson/libros/Ojitos de ángel.jpeg" width="200">
+                        </div>
                     </li>
-        
                     <li>
                         <h3>No quiero ser millonario - Mauro Zúñiga</h3>
-                        <img src="imagenes/winson/libros/No quiero ser millonario.jpg" width="200">
-                        <p>No Quiero Ser Millonario es una novela ejemplar. Mauro Zúñiga Araúz nos describió sus experiencias como médico rural en el cuento Los Lamentos de la Noche, en donde deja plasmadas las vicisitudes por las que atraviesan nuestros campesinos. Ahora, en esta novela, relata, con mayor profundidad, los objetivos de vida de esos hermanos Nuestros, excluidos y marginados.</p>
+                        <div class="contenido">
+                            <p>No Quiero Ser Millonario es una novela ejemplar. Mauro Zúñiga Araúz nos describió sus experiencias como médico rural en el cuento Los Lamentos de la Noche, en donde deja plasmadas las vicisitudes por las que atraviesan nuestros campesinos. Ahora, en esta novela, relata, con mayor profundidad, los objetivos de vida de esos hermanos Nuestros, excluidos y marginados.</p>
+                            <img src="imagenes/winson/libros/No quiero ser millonario.jpg" width="200">
+                        </div>
                     </li>
-        
                     <li>
                         <h3>Babel - R.F. Kuang</h3>
-                        <img src="imagenes/winson/libros/babel.jpg" width="200">
-                        <p>1828. El Instituto Real de Traducción de Oxford, también conocido como Babel, es la institución mágica más importante del mundo. La magia con plata capaz de revelar significados ocultos perdidos en la traducción que allí se practica le ha otorgado al Imperio británico un poder sin parangón.</p>
+                        <div class="contenido">
+                            <p>1828. El Instituto Real de Traducción de Oxford, también conocido como Babel, es la institución mágica más importante del mundo. La magia con plata capaz de revelar significados ocultos perdidos en la traducción que allí se practica le ha otorgado al Imperio británico un poder sin parangón.</p>
+                            <img src="imagenes/winson/libros/babel.jpg" width="200">
+                        </div>
                     </li>
-        
                     <li>
                         <h3>El problema de los tres cuerpos - Liu Cixin</h3>
-                        <img src="imagenes/winson/libros/El problema de los tres cuerpos.jpeg" width="200">
-                        <p>En la novela se narran dos historias paralelas separadas por varias décadas que solo confluyen al final de la misma. Ambas líneas temporales cuentan la creación de un programa militar chino para ponerse en contacto con vida extraterrestre durante la Guerra Fría.</p>
+                        <div class="contenido">
+                            <p>En la novela se narran dos historias paralelas separadas por varias décadas que solo confluyen al final de la misma. Ambas líneas temporales cuentan la creación de un programa militar chino para ponerse en contacto con vida extraterrestre durante la Guerra Fría.</p>
+                            <img src="imagenes/winson/libros/El problema de los tres cuerpos.jpeg" width="200">
+                        </div>
                     </li>
-        
                     <li>
                         <h3>Good Habits, Bad Habits - Wendy Wood</h3>
-                        <img src="imagenes/winson/libros/good habits bad habits.jpg" width="200">
-                        <p>Explica que los hábitos se rigen por señales y recompensas, no por la fuerza de voluntad, y ofrece estrategias para crear cambios duraderos.</p>
+                        <div class="contenido">
+                            <p>Explica que los hábitos se rigen por señales y recompensas, no por la fuerza de voluntad, y ofrece estrategias para crear cambios duraderos.</p>
+                            <img src="imagenes/winson/libros/good habits bad habits.jpg" width="200">
+                        </div>
                     </li>
                 </ol>
             </article>
+
         </section>
     
         <section>
-            <article>
+            <article id="peliculas">
                 <h2 id="peliculas-favoritas"> Mis Películas Favoritas</h2>
                 <ul>
                     <li>
@@ -131,24 +147,24 @@
                         <ul>
                             <li>
                                 <h4>Robot Salvaje</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UPgUIORqja4" title="ROBOT SALVAJE | Tráiler Oficial (Universal Studios) - HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Roz</li>
                                     <li>Brillo</li>
                                     <li>Fink</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UPgUIORqja4" title="ROBOT SALVAJE | Tráiler Oficial (Universal Studios) - HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
         
                             <li>
                                 <h4>Gato con botas: el último deseo</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/QaiUm8jNiCk" title="EL GATO CON BOTAS: EL ÚLTIMO DESEO - Tráiler Oficial (Universal Pictures) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Gato con botas</li>
                                     <li>Kitty patitas suaves</li>
                                     <li>Perrito</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/QaiUm8jNiCk" title="EL GATO CON BOTAS: EL ÚLTIMO DESEO - Tráiler Oficial (Universal Pictures) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
                         </ul>
                     </li>
@@ -158,21 +174,21 @@
                         <ul>
                             <li>
                                 <h4>El gran showman</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/uprrVIIT0G8" title="EL GRAN SHOWMAN | Tráiler | 29 de diciembre en cines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Phillip Carlyle</li>
                                     <li>P. T. Barnum</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/uprrVIIT0G8" title="EL GRAN SHOWMAN | Tráiler | 29 de diciembre en cines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
         
                             <li>
                                 <h4>Wonka</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/otNh9bTjXWg" title="WONKA | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Willy Wonka</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/otNh9bTjXWg" title="WONKA | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
                         </ul>
                     </li>
@@ -182,21 +198,21 @@
                         <ul>
                             <li>
                                 <h4>El planeta de los simios: Nuevo reino</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/DDWWwEiWHJw" title="#ElPlanetaDeLosSimios: Nuevo Reino | Tráiler Oficial | Doblado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Proximus Caesar</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/DDWWwEiWHJw" title="#ElPlanetaDeLosSimios: Nuevo Reino | Tráiler Oficial | Doblado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
         
                             <li>
                                 <h4>Una pareja explosiva 3</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/FRDRWXfQyJE" title="Rush Hour 3 (2007) Official Trailer 2 - Jackie Chan, Chris Tucker Movie HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Detective James Carter</li>
                                     <li>Inspector Lee</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/FRDRWXfQyJE" title="Rush Hour 3 (2007) Official Trailer 2 - Jackie Chan, Chris Tucker Movie HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
                         </ul>
                     </li>

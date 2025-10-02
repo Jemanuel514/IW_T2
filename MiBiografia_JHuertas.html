@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/encabezado.css">
+    <link rel="stylesheet" href="estilos/estiloDesktop.css">
+    <link rel="stylesheet" href="estilos/piedepagina.css">
     <title>Mi Biografía - José Huertas</title>
 </head>
 <body>
@@ -35,25 +38,31 @@
     
             <article>
                 <h3>Mis cualidades</h3>
-                <dl>
-                    <dt>Ordenado</dt>
-                    <dd>Me gusta el orden, la uniformidad y planear muy bien las cosas antes de realizarlas.</dd>
-                    
-                    <dt>Creativo</dt>
-                    <dd>Me considero alguien creativo; me gusta dibujar, tocar guitarra, el modelado 3D, y tengo muchos objetivos a futuro que involucran estas actividades.</dd>
-                    
-                    <dt>Perfeccionista</dt>
-                    <dd>Me gusta que las cosas queden lo mejor posible, lo que involucra fijarse en detalles minúsculos que parecen no tener importancia.</dd>
-                    
-                    <dt>Resiliente</dt>
-                    <dd>Si bien puedo llegar a estar muy estresado, trato siempre de ver las cosas desde una perspectiva amplia, sin paralizarme.</dd>
-                    
-                    <dt>Honesto</dt>
-                    <dd>Creo que la honestidad y la comunicación son más importantes que mantener un falso ambiente de calma.</dd>
-                </dl>
+                <ul>
+                    <li>
+                        Ordenado
+                        <p>Me gusta el orden, la uniformidad y planear muy bien las cosas antes de realizarlas.</p>
+                    </li>
+                    <li>
+                        Creativo
+                        <p>Me considero alguien creativo; me gusta dibujar, tocar guitarra, el modelado 3D, y tengo muchos objetivos a futuro que involucran estas actividades.</p>
+                    </li>
+                    <li>
+                        Perfeccionista
+                        <p>Me gusta que las cosas queden lo mejor posible, lo que involucra fijarse en detalles minúsculos que parecen no tener importancia.</p>
+                    </li>
+                    <li>
+                        Resiliente
+                        <p>Si bien puedo llegar a estar muy estresado, trato siempre de ver las cosas desde una perspectiva amplia, sin paralizarme.</p>
+                    </li>
+                    <li>
+                        Honesto
+                        <p>Creo que la honestidad y la comunicación son más importantes que mantener un falso ambiente de calma.</p>
+                    </li>
+                </ul>
             </article>
     
-            <article>
+            <article id="pasatiempos">
                 <h3>Mis Pasatiempos</h3>
                 <ul>
                     <li>
@@ -78,7 +87,7 @@
                 </ul>
             </article>
     
-            <figure>
+            <figure id="mi-video">
                 <h3>Mi Vídeo</h3>
                 <video controls width="400"><source src="videos/los insectos.mp4" type="video/mp4"></video>
                 <figcaption>Los Insectos</figcaption>
@@ -86,44 +95,50 @@
         </section>
     
         <section>
-            <article>
+            <article id="libros">
                 <h2 id="libros-favoritos">Mis Libros Favoritos</h2>
                 <ol>
                     <li>
                         <h3>Asfixia - Alex Mírez</h3>
-                        <img src="imagenes/jose/libros/Asfixia.png" width="200">
-                        <p>El 1 de septiembre de 2019, las personas comienzan a morir asfixiadas sin motivo aparente, y Drey, nuestra protagonista, parece ser la única sobreviviente a esta catástrofe. A lo largo del libro, la acompañaremos en su recorrido por el mundo que alguna vez conoció, mientras se adentra en los misterios sobre el origen este fenómeno.</p>
+                        <div class="contenido">
+                            <p>El 1 de septiembre de 2019, las personas comienzan a morir asfixiadas sin motivo aparente, y Drey, nuestra protagonista, parece ser la única sobreviviente a esta catástrofe. A lo largo del libro, la acompañaremos en su recorrido por el mundo que alguna vez conoció, mientras se adentra en los misterios sobre el origen este fenómeno.</p>
+                            <img src="imagenes/jose/libros/Asfixia.png" width="200">
+                        </div>
                     </li>
-        
                     <li>
                         <h3>El Principito - Antoine de Saint-Exupéry</h3>
-                        <img src="imagenes/jose/libros/El Principito.png" width="200">
-                        <p>Un aviador se accidenta en un desierto donde conoce a un niño que dice venir de otro planeta. A través de sus historias, el principito nos hará reflexionar sobre los dilemas de la vida adulta.</p>
+                        <div class="contenido">
+                            <p>Un aviador se accidenta en un desierto donde conoce a un niño que dice venir de otro planeta. A través de sus historias, el principito nos hará reflexionar sobre los dilemas de la vida adulta.</p>
+                            <img src="imagenes/jose/libros/El Principito.png" width="200">
+                        </div>
                     </li>
-        
                     <li>
                         <h3>El Extranjero - Albert Camus</h3>
-                        <img src="imagenes/jose/libros/El Extranjero.jpg" width="200">
-                        <p>El protagonista, el señor Meursault, jamás se manifestará contra su ajusticiamiento ni mostrará sentimiento alguno de injusticia, arrepentimiento o lástima. La pasividad y el escepticismo frente a todo y todos recorre el comportamiento del protagonista: un sentido apático de la existencia y aun de la propia muerte.<p>
+                        <div class="contenido">
+                            <p>El protagonista, el señor Meursault, jamás se manifestará contra su ajusticiamiento ni mostrará sentimiento alguno de injusticia, arrepentimiento o lástima. La pasividad y el escepticismo frente a todo y todos recorre el comportamiento del protagonista: un sentido apático de la existencia y aun de la propia muerte.</p>
+                            <img src="imagenes/jose/libros/El Extranjero.jpg" width="200">
+                        </div>
                     </li>
-        
                     <li>
                         <h3>Metamorfosis - Franz Kafka</h3>
-                        <img src="imagenes/jose/libros/La Metamorfosis.png" width="200">
-                        <p>Gregorio Samsa, el sustento económico de su familia, despierta un día convertido en un insecto gigante. Mientras ahondamos en los pensamientos y preocupaciones de Gregorio, seremos testigos de cómo su familia lo deja de lado, descartando a quien ya no puede ser un miembro productivo de la sociedad.</p>
+                        <div class="contenido">
+                            <p>Gregorio Samsa, el sustento económico de su familia, despierta un día convertido en un insecto gigante. Mientras ahondamos en los pensamientos y preocupaciones de Gregorio, seremos testigos de cómo su familia lo deja de lado, descartando a quien ya no puede ser un miembro productivo de la sociedad.</p>
+                            <img src="imagenes/jose/libros/La Metamorfosis.png" width="200">
+                        </div>
                     </li>
-        
                     <li>
                         <h3>El Cantar de Mio Cid - Anónimo</h3>
-                        <img src="imagenes/jose/libros/El Mío Cid.png" width="200">
-                        <p>El Cantar de Mio Cid es un cantar de gesta que relata la historia de Rodrigo Díaz de Vivar, el Campeador, un caballero castellano que, tras ser acusado y exiliado injustamente, emprende un camino de redención para recuperar su honor.</p>
+                        <div class="contenido">
+                            <p>El Cantar de Mio Cid es un cantar de gesta que relata la historia de Rodrigo Díaz de Vivar, el Campeador, un caballero castellano que, tras ser acusado y exiliado injustamente, emprende un camino de redención para recuperar su honor.</p>
+                            <img src="imagenes/jose/libros/El Mío Cid.png" width="200">
+                        </div>
                     </li>
                 </ol>
             </article>
         </section>
     
         <section>
-            <article>
+            <article id="peliculas">
                 <h2 id="peliculas-favoritas"> Mis Películas Favoritas</h2>
                 <ul>
                     <li>
@@ -131,20 +146,20 @@
                         <ul>
                             <li>
                                 <h4>Superman (2025) - James Gunn</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0X_kBulSMjQ?si=SvMslDaMom9q9WXp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Clark Kent</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0X_kBulSMjQ?si=SvMslDaMom9q9WXp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
         
                             <li>
                                 <h4>Spiderman: Un Nuevo Universo - Peter Ramsey, Rodney Rothman y Bob Persichetti</h4>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ouKXvfzlK2o?si=l9bTqGMdj9YvUbcC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                     <p>Protagonistas:</p>
                                     <ul>
                                         <li>Miles Morales</li>
                                     </ul>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ouKXvfzlK2o?si=l9bTqGMdj9YvUbcC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
                         </ul>
                     </li>
@@ -154,6 +169,7 @@
                         <ul>
                             <li>
                                 <h4>Alien: El Octavo Pasajero - Ridley Scott</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Eu9ZFTXXEiw?si=IHXX-ISDlKsCeXYT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Ellen Ripley</li>
@@ -164,19 +180,18 @@
                                     <li>Ash</li>
                                     <li>Parker</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Eu9ZFTXXEiw?si=IHXX-ISDlKsCeXYT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
         
                             <li>
                                 <h4>Destino Final 5 - Steven Quale</h4>
-                                    <p>Protagonistas:</p>
-                                    <ul>
-                                        <li>Sam Lawton</li>
-                                        <li>Molly Harper</li>
-                                        <li>Nathan Sears</li>
-                                        <li>Peter Friedkin</li>
-                                    </ul>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NM877mmSphc?si=4SwXDlQF4BvMCuen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NM877mmSphc?si=4SwXDlQF4BvMCuen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p>Protagonistas:</p>
+                                <ul>
+                                    <li>Sam Lawton</li>
+                                    <li>Molly Harper</li>
+                                    <li>Nathan Sears</li>
+                                    <li>Peter Friedkin</li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -186,6 +201,7 @@
                         <ul>
                             <li>
                                 <h4>Isla de Perros - Wes Anderson</h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xC5DWAVCSFw?si=WDflWDMfZmKzaOsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 <p>Protagonistas:</p>
                                 <ul>
                                     <li>Rex</li>
@@ -195,18 +211,17 @@
                                     <li>Chief</li>
                                     <li>Atari</li>
                                 </ul>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xC5DWAVCSFw?si=WDflWDMfZmKzaOsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </li>
         
                             <li>
                                 <h4>Robot Salvaje - Chris Sanders</h4>
-                                    <p>Protagonistas:</p>
-                                    <ul>
-                                        <li>Roz</li>
-                                        <li>Fink</li>
-                                        <li>Brillo</li>
-                                    </ul>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UPgUIORqja4?si=HBlcy7Fd7PTWizP9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UPgUIORqja4?si=HBlcy7Fd7PTWizP9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p>Protagonistas:</p>
+                                <ul>
+                                    <li>Roz</li>
+                                    <li>Fink</li>
+                                    <li>Brillo</li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
